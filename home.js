@@ -1,1 +1,0 @@
-const root=document.querySelector('#portfolio');root.innerHTML=PRODUCTS.map(p=>`<a class="venture" href="/products/?slug=${p.slug}" style="--accent:${p.accent}"><div class="rank">0${p.rank}</div><div><h2>${p.name}</h2><p>${p.short}</p><div class="meta"><span>${p.buyer}</span><span>${p.price}</span></div></div><div class="arrow">↗</div></a>`).join('');

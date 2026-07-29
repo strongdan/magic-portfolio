@@ -1,0 +1,1 @@
+"use client"; import { AppShell, ProductWorkspace } from "@venture-lab/ui"; import { getProduct } from "@venture-lab/mock-data"; export default function Page(){const product=getProduct("knowledge-succession-room");return <AppShell product={product}><ProductWorkspace product={product}/></AppShell>}

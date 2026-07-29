@@ -1,0 +1,1 @@
+import "@venture-lab/ui/styles.css"; import type { Metadata } from "next"; export const metadata:Metadata={title:"Policy Impact Mapper · Venture Lab"}; export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}
