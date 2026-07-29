@@ -9,6 +9,15 @@ Venture Lab is a pnpm/Turborepo monorepo for five standalone, evidence-first pro
 - `apps/knowledge-succession-room` — evidence-linked knowledge capture
 - `apps/policy-impact-mapper` — source-linked implementation planning
 
+## Live production demos
+
+- [Venture Lab portfolio](https://portfolio-seven-rouge-69.vercel.app)
+- [Legacy Parity Room](https://legacy-parity-room.vercel.app)
+- [Agent-Safe Data Gateway](https://agent-safe-data-gateway.vercel.app)
+- [Public-Data Evidence Room](https://public-data-evidence-room.vercel.app)
+- [Knowledge Succession Room](https://knowledge-succession-room.vercel.app)
+- [Policy Impact Mapper](https://policy-impact-mapper.vercel.app)
+
 ## Run locally
 
 ```bash
