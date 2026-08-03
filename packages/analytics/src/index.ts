@@ -1,2 +1,10 @@
 export type AnalyticsEvent = "product_card_opened" | "demo_started" | "key_workflow_completed" | "pilot_form_opened" | "pilot_form_submitted" | "comparison_used" | "pricing_viewed" | "product_switched" | "feedback_submitted";
-export function track(event: AnalyticsEvent, properties: Record<string,string|number|boolean> = {}) { if (typeof window !== "undefined" && process.env.NEXT_PUBLIC_ANALYTICS_ENABLED !== "false") window.dispatchEvent(new CustomEvent("venture-lab:analytics", { detail:{ event, properties, at:new Date().toISOString() } })); }
+
+export function track(event: AnalyticsEvent, properties: Record<string,string|number|boolean> = {}) {
+  if (typeof window === "undefined") return;
+  const analyticsEnabled = document.documentElement.dataset.analyticsEnabled !== "false";
+  if (!analyticsEnabled) return;
+  window.dispatchEvent(new CustomEvent("venture-lab:analytics", {
+    detail: { event, properties, at: new Date().toISOString() }
+  }));
+}
